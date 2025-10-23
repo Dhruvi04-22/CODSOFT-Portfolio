@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Poppins' , sans-serif;
-  background-image: url(images/portfolio-bg.png);
-  background-size: cover;
+  /* background-image: url(images/portfolio-bg.png);
+  background-size: cover; */
+  background-color: #feefef;
   max-width: 1900px;
   margin: 0 auto;
 }
@@ -104,7 +106,7 @@ nav {
 }
 
 .home .text-content .links a:last-child:hover {
-  background-color: white;
+  background-color: #feefef;
   color: black;
   border: 2px solid rgb(90, 16, 16);
 }
@@ -374,12 +376,6 @@ nav {
   filter: brightness(.9);
 }
 
-@media (max-width: 1500px) {
-  .about-section .about-container .about-img img {
-    width: 400px;
-  }
-}
-
 /* FOOTER */
 footer {
   background-color: rgb(49, 14, 14);
@@ -407,6 +403,15 @@ footer .footer-content a {
 }
 
 /* RESPONISVE - MEDIA */
+
+@media (max-width: 1500px) {
+
+  /* SECTION 2: ABOUT */
+
+  .about-section .about-container .about-img img {
+    width: 400px;
+  }
+}
 
 @media (max-width: 1300px) {
 
@@ -732,6 +737,33 @@ footer .footer-content a {
 
 @media (max-width: 340px) {
 
+  /* SECTION 1: HOME */
+
+  .home {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 370px) {
+
+  /* NAVBAR */
+
+  nav {
+    padding: 0 3%;
+  }
+
+  nav .left a{
+    font-size: 18px;
+  }
+
+  nav .right a {
+    font-size: 11px;
+    margin: 3px;
+  }
+}
+
+@media (max-height:850px) {
+ 
   /* SECTION 1: HOME */
 
   .home {
