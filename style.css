@@ -75,6 +75,12 @@ nav {
   font-size: 20px;
 }
 
+.home .text-content .intro a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
 .home .text-content .links {
   margin-top: 25px;
 }
@@ -82,6 +88,7 @@ nav {
 .home .text-content .links a {
   color: black;
   text-decoration: none;
+  text-align: center;
   font-size: 20px;
   display: inline-block;
   padding: 5px 10px;
@@ -157,6 +164,7 @@ nav {
 
 .about-section .about-container .about-info a {
   text-decoration: none;
+  text-align: center;
   color: black;
   font-size: 18px;
   border: 2px solid black;
@@ -285,6 +293,7 @@ nav {
 .project-section .MyProjects .project .text a {
   color: black;
   text-decoration: none;
+  text-align: center;
   border: 2px solid black;
   border-radius: 5px;
   padding: 5px 10px;
@@ -431,6 +440,11 @@ footer .footer-content a {
 
   /* SECTION 2: ABOUT */
 
+  .about-section .about-container {
+    flex-direction: column-reverse;
+    padding-top: unset;
+  }
+
   .about-section .about-container .about-img img {
     width: 350px;
   }
@@ -464,11 +478,6 @@ footer .footer-content a {
 @media (max-width: 1050px) {
 
   /* SECTION 2: ABOUT */
-
-  .about-section .about-container {
-    flex-direction: column-reverse;
-    padding-top: unset;
-  }
 
   .about-section h2 {
     font-size: 40px;
